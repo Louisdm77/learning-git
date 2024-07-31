@@ -1,0 +1,308 @@
+body {
+  background-color: rgb(240, 239, 239) !important;
+}
+.double {
+  display: flex;
+  justify-content: space-between;
+}
+.text-center li {
+  list-style: none;
+}
+.animated-caption {
+  position: absolute !important;
+  left: 10% !important;
+  right: 15% !important;
+  top: 10rem;
+  font-family: sans-serif;
+  line-height: 20px;
+  color: rgb(34, 33, 33) !important;
+  text-align: left !important;
+}
+.animated-caption p {
+  font-weight: 300;
+}
+.text-center li:hover {
+  background-color: orange;
+}
+.card-body {
+  padding: 10px !important;
+}
+
+.one {
+  height: 550px;
+}
+.carousel-fade {
+  background-image: url(whitespiral.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one img {
+  margin-left: 35%;
+}
+.animated-caption p {
+  animation: texts 2s ease-in;
+}
+.animated-caption h2 {
+  animation: texti 2s ease-in;
+}
+@keyframes texti {
+  0% {
+    font-size: 40px;
+  }
+  50% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+@keyframes texts {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 10px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+.new img {
+  height: 200px;
+}
+.ann {
+  position: absolute;
+  bottom: 45%;
+  right: 30%;
+  left: 45%;
+  margin: auto;
+  font-weight: 800;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  color: rgb(77, 51, 4);
+}
+.ann:hover {
+  animation: ann 0.5s ease-in forwards;
+}
+
+@keyframes ann {
+  0% {
+    padding: 0px;
+    background-color: transparent;
+  }
+  25% {
+    padding: 2px;
+    background-color: transparent;
+    border-color: solid white;
+  }
+  75% {
+    padding: 7px;
+    background-color: transparent;
+    border-color: solid white;
+  }
+  100% {
+    padding: 10px;
+    background-color: white;
+    border-color: solid white;
+  }
+}
+.navv {
+  width: 40% !important;
+  margin-bottom: 50px;
+  border-style: outset;
+}
+.navv .col {
+  margin-top: 50px;
+}
+.hidden {
+  display: none;
+}
+.card img {
+  height: 170px;
+}
+.card-body {
+  text-align: start;
+  background-color: rgb(216, 211, 211);
+}
+.crew .card {
+  width: 150%;
+}
+.deals {
+  margin-top: 40px;
+  display: flex;
+  height: 600px;
+  background-color: rgb(236, 228, 238);
+  padding: 60px;
+}
+
+.card-slid,
+.card-slid2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+.cardi {
+  transition: 1s;
+  width: 220px;
+  margin-right: 20px;
+  position: relative;
+}
+.cardi:hover {
+  transform: scale(1.1);
+}
+
+.cardi img {
+  width: 200px;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 45%;
+  left: 15%;
+  right: 10%;
+  font-size: 30px !important;
+  font-weight: bolder;
+  color: white !important;
+  background-color: rgba(12, 12, 12, 0.5);
+  text-align: center;
+}
+.card-body {
+  padding: 20px;
+  background-color: white;
+}
+.images img {
+  width: 100%;
+  height: 150px;
+}
+#btnn {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: transparent;
+}
+.timer {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+}
+.timer div {
+  margin-right: 10px;
+  padding: 10px;
+  background-color: rgb(247, 247, 241);
+}
+.hover {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  right: 10%;
+  color: white !important;
+  display: none;
+}
+.nam:hover .hover {
+  display: block;
+}
+.blog img {
+  height: 300px !important;
+}
+.foot a {
+  text-decoration: none;
+  color: rgb(172, 168, 160);
+}
+.foot {
+  padding: 20px;
+  color: rgb(172, 168, 160);
+}
+@media screen and (max-width: 800px) {
+  .par,
+  .double {
+    display: none;
+  }
+  .animated-caption {
+    top: 1.75rem;
+    left: auto;
+  }
+}
+@media screen and (max-width: 780px) {
+  .one img {
+    visibility: hidden;
+  }
+  .items .card {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .crew {
+    width: 50%;
+  }
+  .hover {
+    position: absolute;
+    bottom: 45%;
+    left: 15%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .par,
+  .double {
+    display: none;
+  }
+  .animated-caption {
+    top: 0.5rem;
+    left: auto;
+    font-weight: 500;
+    font-size: small;
+  }
+  .fas,
+  .carousel-inner {
+    height: 250px !important;
+  }
+  .navv .card {
+    margin-bottom: 20px;
+  }
+  .items .card {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .crew {
+    width: 100%;
+  }
+  .timer {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .new img {
+    height: 300px;
+  }
+  .crew {
+    width: 33.33%;
+  }
+  .deals {
+    height: auto;
+  }
+  .deals img {
+    display: none;
+  }
+  .deall {
+    width: 100% !important;
+  }
+  .images img {
+    width: 100%;
+    height: 250px;
+  }
+  .spons {
+    height: fit-content !important;
+    text-align: center;
+  }
+  .cardi {
+    margin-bottom: 30px;
+  }
+}

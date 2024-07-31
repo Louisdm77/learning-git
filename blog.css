@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(240, 239, 239) !important;
+}
+.side div {
+  margin-top: 15px;
+}
+.side h6 {
+  font-weight: 350;
+}
+
+@media screen and (max-width: 990px) {
+  .side {
+    order: 2;
+  }
+}

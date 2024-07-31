@@ -1,0 +1,844 @@
+body {
+  color: rgb(97, 94, 94) !important;
+}
+.shop a {
+  text-decoration: none;
+  color: rgb(145, 141, 141) !important;
+  line-height: 40px;
+}
+.form-check {
+  line-height: 30px;
+}
+
+.btn-secondary {
+  background-color: #fff !important;
+  color: #3d3c3c !important;
+  margin-right: 10px;
+  border-radius: 0% !important;
+  border-color: #636262 !important;
+}
+.first {
+  display: flex;
+  flex-wrap: wrap;
+}
+.names a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 30px;
+}
+.names {
+  line-height: 20px;
+}
+.names div {
+  margin-bottom: 20px;
+}
+.size {
+  font-weight: 600;
+  text-align: center;
+  padding-left: 10px;
+
+  padding-right: 10px;
+  font-size: larger;
+  border: 2px solid rgb(184, 177, 177);
+  margin-right: 10px;
+  background-color: transparent;
+}
+.cardi {
+  margin-top: 20px;
+}
+.cardi img {
+  width: 100% !important;
+}
+@media screen and (max-width: 990px) {
+  .cardi,
+  .cardi img {
+    width: 100% !important;
+  }
+  .shopitems .cardi {
+    margin: 20px;
+  }
+
+  .names {
+    order: 2;
+  }
+  .itt {
+    display: flex;
+    flex-wrap: wrap;
+
+    order: 1;
+  }
+}
+@media screen and (max-width: 560px) {
+  .dropp {
+    flex-direction: column;
+  }
+  .dropp div {
+    margin-bottom: 10px;
+    align-items: start;
+  }
+}
+/* <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="caro.css" />
+    <script
+      src="https://kit.fontawesome.com/88871d979c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent d-flex" style="justify-content: space-between">
+        <div class="par" style="width: 30%">
+          <i class="fa-solid fa-envelope"></i> reox@gmail.com
+        </div>
+        <div class="double" style="width: 30%">
+          <div><i class="fa-solid fa-phone"></i> +64 23.23.21.23</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i
+            ><i class="fa-brands fa-instagram"></i
+            ><i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+        <div class="con">
+          <select name="country" id="language">
+            <option value="English">English</option>
+            <option value="German">German</option>
+          </select>
+        </div>
+        <div class="log" style="width: 10%">
+          <a href="#"><i class="fa-solid fa-user"></i> Login</a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div
+          class="container-fluid"
+          style="display: flex; justify-content: space-between; padding: 20px"
+        >
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-weight: 900;
+              color: rgb(15, 15, 15);
+              font-size: xx-large;
+            "
+            >FASHI
+            <span
+              style="
+                font-weight: 900;
+                color: rgb(228, 140, 9);
+                font-size: xx-large;
+              "
+              >.</span
+            ></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ms-7"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex" ms-3 role="search">
+              <select
+                class="select"
+                name="cat"
+                id="cat"
+                style="
+                  margin-left: 20px;
+                  border-color: rgb(218, 218, 210);
+                  border-radius: 10px;
+                  border-collapse: collapse;
+                "
+              >
+                <option value="">clothes</option>
+                <option value="">shoes</option>
+              </select>
+              <input
+                class="form-control me-2 ms-30"
+                type="search"
+                placeholder="What do you need?"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <div
+              style="
+                margin-left: auto;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+              "
+            >
+              <a href="#"
+                ><i class="fa-regular fa-heart" style="font-size: xx-large"></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-shopping-cart"
+                  style="font-size: xx-large"
+                ></i
+              ></a>
+              <h4>$150.00</h4>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container text-center"
+        style="
+          background-color: rgb(34, 34, 34);
+          padding-top: 10px;
+          color: white;
+        "
+      >
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ALL DEPARTMENTS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SHOP</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COLLECTION</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PAGES</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="breadcrumb" style="padding-top: 10px">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="caro.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Shop</li>
+        </ol>
+      </nav>
+      <hr />
+      <div class="row first">
+        <div
+          class="col-sm-12 col-md-12 col-lg-3 shop"
+          style="height: fit-content"
+        >
+          <div style="display: flex; flex-direction: column">
+            <h4 style="color: rgb(70, 69, 69)">Categories</h4>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+          </div>
+          <div>
+            <h4 style="color: rgb(70, 69, 69)">Brand</h4>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Calvin Klien
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Diesel
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Polo
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Tommy Hilfiger
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-9 shopitems">
+          <div
+            class="dropp"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 30px;
+            "
+          >
+            <div style="display: flex">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Default Sorting
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button class="dropdown-item" type="button">Action</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Another action
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown firs">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Show: 09
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button class="dropdown-item" type="button">Action</button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button">
+                      Another action
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div style="margin-right: 0">
+              <p>Show 01- 09 Of 36 Product</p>
+            </div>
+          </div>
+          <div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 second">
+                <div class="cardi">
+                  <img src="shirt.jpg" class="card-img-top shp" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Shirt</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="cardi">
+                  <img src="shoe2.jpg" class="card-img-top shp" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Shoe</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="cardi">
+                  <img src="cap4.png" class="card-img-top shp" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Cap</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row second" style="margin-top: 30px; margin-bottom: 20px">
+        <div
+          class="col-sm-12 col-md-12 col-lg-3 shop"
+          style="height: fit-content"
+        >
+          <div style="display: flex; flex-direction: column">
+            <h4 style="color: rgb(70, 69, 69)">Price</h4>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+          </div>
+          <div>
+            <h4 style="color: rgb(70, 69, 69)">Color</h4>
+            <div style="display: flex; line-height: 30px">
+              <div style="display: block">
+                <button
+                  style="
+                    display: flex;
+                    background: none;
+                    align-items: center;
+                    font-size: 15px;
+                    border: none;
+                    color: gray;
+                    margin-right: 20px;
+                  "
+                >
+                  <span
+                    style="
+                      display: block;
+                      width: 20px;
+                      background-color: violet;
+                      height: 20px;
+                      border-radius: 100%;
+                    "
+                  ></span>
+                  &nbsp;&nbsp; Violet
+                </button>
+                <button
+                  style="
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    background: none;
+                    border: none;
+                    color: gray;
+                  "
+                >
+                  <span
+                    style="
+                      display: block;
+                      width: 20px;
+                      background-color: black;
+                      height: 20px;
+                      border-radius: 100%;
+                    "
+                  ></span>
+                  &nbsp;&nbsp; Black
+                </button>
+                <button
+                  style="
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    background: none;
+                    border: none;
+                    color: gray;
+                  "
+                >
+                  <span
+                    style="
+                      display: block;
+                      width: 20px;
+                      background-color: green;
+                      height: 20px;
+                      border-radius: 100%;
+                    "
+                  ></span>
+                  &nbsp;&nbsp; Green
+                </button>
+              </div>
+              <div style="display: block">
+                <button
+                  style="
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    background: none;
+                    border: none;
+                    color: gray;
+                    margin-right: 20px;
+                  "
+                >
+                  <span
+                    style="
+                      display: block;
+                      width: 20px;
+                      background-color: blue;
+                      height: 20px;
+                      border-radius: 100%;
+                    "
+                  ></span>
+                  &nbsp;&nbsp; Blue
+                </button>
+                <button
+                  style="
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    border: none;
+                    background: none;
+                    color: gray;
+                  "
+                >
+                  <span
+                    style="
+                      display: block;
+                      width: 20px;
+                      background-color: yellow;
+                      height: 20px;
+                      border-radius: 100%;
+                    "
+                  ></span>
+                  &nbsp;&nbsp; yellow
+                </button>
+                <button
+                  style="
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    border: none;
+                    background: none;
+                    color: gray;
+                  "
+                >
+                  <span
+                    style="
+                      display: block;
+                      width: 20px;
+                      background-color: yellow;
+                      height: 20px;
+                      border-radius: 100%;
+                    "
+                  ></span>
+                  &nbsp;&nbsp; yellow
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-9 third">
+          <div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="cardi">
+                  <img src="cap3.jpg" class="card-img-top shp" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Cap</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="cardi">
+                  <img
+                    src="applewatch.png"
+                    class="card-img-top shp"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Apple watch</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="cardi">
+                  <img src="tshirt.png" class="card-img-top shp" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">t-shirt</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row third">
+        <div
+          class="col-sm-12 col-md-12 col-lg-3 shop"
+          style="height: fit-content"
+        >
+          <div style="display: flex; flex-direction: column">
+            <h4 style="color: rgb(70, 69, 69)">Size</h4>
+            <div>
+              <button type="submit" class="size">S</button
+              ><button type="submit" class="size">M</button
+              ><button type="submit" class="size">L</button
+              ><button type="submit" class="size">XL</button>
+            </div>
+          </div>
+          <div>
+            <h4
+              style="
+                color: rgb(70, 69, 69);
+                margin-top: 20px;
+                margin-bottom: 20px;
+              "
+            >
+              Tags
+            </h4>
+            <div style="display: flex">
+              <button
+                style="
+                  color: gray;
+                  border: 2px solid rgba(143, 137, 137, 0.5);
+                  background-color: transparent;
+                  margin-right: 10px;
+                "
+              >
+                Towel
+              </button>
+              <button
+                style="
+                  color: gray;
+                  border: 2px solid rgba(143, 137, 137, 0.5);
+                  background-color: transparent;
+                  margin-right: 10px;
+                "
+              >
+                Shoes
+              </button>
+              <button
+                style="
+                  color: gray;
+                  border: 2px solid rgba(143, 137, 137, 0.5);
+                  background-color: transparent;
+                  margin-right: 10px;
+                "
+              >
+                Coat
+              </button>
+            </div>
+            <div style="display: flex; margin-top: 10px">
+              <button
+                style="
+                  color: gray;
+                  border: 2px solid rgba(143, 137, 137, 0.5);
+                  background-color: transparent;
+                  margin-right: 10px;
+                "
+              >
+                Dresses
+              </button>
+              <button
+                style="
+                  color: gray;
+                  border: 2px solid rgba(143, 137, 137, 0.5);
+                  background-color: transparent;
+                  margin-right: 10px;
+                "
+              >
+                Trousers
+              </button>
+            </div>
+            <div style="display: flex; margin-top: 10px">
+              <button
+                style="
+                  color: gray;
+                  border: 2px solid rgba(143, 137, 137, 0.5);
+                  background-color: transparent;
+                  margin-right: 10px;
+                "
+              >
+                Men's hat
+              </button>
+              <button
+                style="
+                  color: gray;
+                  border: 2px solid rgba(143, 137, 137, 0.5);
+                  background-color: transparent;
+                  margin-right: 10px;
+                "
+              >
+                Backpack
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-9 shopitems">
+          <div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="cardi">
+                  <img src="shirt.jpg" class="card-img-top shp" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Shirt</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="cardi">
+                  <img src="shoe2.jpg" class="card-img-top shp" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Shoe</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="cardi">
+                  <img src="cap4.png" class="card-img-top shp" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Cap</h5>
+                    <p class="card-text">
+                      $20.22 &nbsp;&nbsp;<strike
+                        style="color: rgb(150, 158, 160)"
+                        >50.43</strike
+                      >
+                    </p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                text-align: center;
+                margin-top: 20px;
+                text-decoration: 3px orange underline;
+              "
+            >
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              Loading more
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row all">
+
+        <div class="col-sm-12 col-md-12 col-lg-3 names"></div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <script src="shop.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html> */

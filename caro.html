@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="caro.css" />
+    <script
+      src="https://kit.fontawesome.com/88871d979c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .dropdown-menu {
+        display: none;
+      }
+
+      .nav-item:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="parent d-flex" style="justify-content: space-between">
+        <div class="par" style="width: 30%">
+          <i class="fa-solid fa-envelope"></i> reox@gmail.com
+        </div>
+        <div class="double" style="width: 30%">
+          <div><i class="fa-solid fa-phone"></i> +64 23.23.21.23</div>
+          <div>
+            <i class="fa-brands fa-facebook"></i
+            ><i class="fa-brands fa-instagram"></i
+            ><i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+        <div class="con">
+          <select name="country" id="language">
+            <option value="English">English</option>
+            <option value="German">German</option>
+          </select>
+        </div>
+        <div class="log" style="width: 10%">
+          <a href="login.html"><i class="fa-solid fa-user"></i> Login</a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div
+          class="container-fluid"
+          style="display: flex; justify-content: space-between; padding: 20px"
+        >
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-weight: 900;
+              color: rgb(15, 15, 15);
+              font-size: xx-large;
+            "
+            >FASHI
+            <span
+              style="
+                font-weight: 900;
+                color: rgb(228, 140, 9);
+                font-size: xx-large;
+              "
+              >.</span
+            ></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ms-7"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex" ms-3 role="search">
+              <select
+                class="select"
+                name="cat"
+                id="cat"
+                style="
+                  margin-left: 20px;
+                  border-color: rgb(218, 218, 210);
+                  border-radius: 10px;
+                  border-collapse: collapse;
+                "
+              >
+                <option value="">clothes</option>
+                <option value="">shoes</option>
+              </select>
+              <input
+                class="form-control me-2 ms-30"
+                type="search"
+                placeholder="What do you need?"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <div
+              style="
+                margin-left: auto;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+              "
+            >
+              <a href="#"
+                ><i class="fa-regular fa-heart" style="font-size: xx-large"></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa-solid fa-shopping-cart"
+                  style="font-size: xx-large"
+                ></i
+              ></a>
+              <h4>$150.00</h4>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container text-center"
+        style="
+          background-color: rgb(34, 34, 34);
+          padding-top: 10px;
+          color: white;
+        "
+      >
+        <div class="row">
+          <div class="col">
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ALL DEPARTMENTS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="caro.html">HOME</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">SHOP</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >COLLECTION</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Men's</a></li>
+                  <li><a class="dropdown-item" href="#">Women's</a></li>
+                  <li><a class="dropdown-item" href="#">Kid's</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >PAGES</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="blogpost.html"
+                      >Blog details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cart.html">Shopping Cart</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="checkout.html">Checkout</a>
+                  </li>
+                  <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                  <li>
+                    <a class="dropdown-item" href="signup.html">Register</a>
+                  </li>
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade fas"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active one">
+            <img src="woman.png" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-sm-block d-md-block animated-caption"
+            >
+              <h2 class="texti">Black Friday</h2>
+              <p class="texts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+                <br />
+                quos recusandae error mollitia porro tempora?
+              </p>
+              <button
+                type="button"
+                class="btn text"
+                style="
+                  background-color: rgb(216, 130, 17);
+                  font-weight: 800;
+                  font-size: large;
+                  color: white;
+                  display: flex;
+                  align-items: start;
+                "
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item one">
+            <img src="child1.png" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-sm-block d-md-block animated-caption"
+            >
+              <h2 class="texti">Black Friday</h2>
+              <p class="texts">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+                <br />
+                quos recusandae error mollitia porro tempora?
+              </p>
+              <button
+                type="button"
+                class="btn"
+                style="
+                  background-color: rgb(216, 130, 17);
+                  font-weight: 800;
+                  font-size: large;
+                  color: white;
+                  display: flex;
+                  align-items: start;
+                "
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row" style="margin-top: 20px; justify-content: center">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="card new" style="width: 100%">
+            <img src="shoe5.png" class="card-img-top img-fluid" alt="..." />
+            <p class="ann">MEN</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="card new" style="width: 100%">
+            <img src="crocs.jpg" class="card-img-top img-fluid" alt="..." />
+
+            <p class="ann">WOMEN</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="card new" style="width: 100%">
+            <img src="kid1.jpg" class="card-img-top img-fluid" alt="..." />
+            <p class="ann">KIDS</p>
+          </div>
+        </div>
+      </div>
+      <div class="row items" style="margin-top: 40px">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <figure class="figure" style="position: relative">
+            <img
+              src="fashion-model-in-fur.jpg"
+              class="figure-img img-fluid rounded"
+              alt="..."
+              style="position: relative"
+            />
+            <figcaption
+              class="figure-caption"
+              style="
+                font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                  sans-serif;
+                font-size: large;
+              "
+            >
+              A black fashion model in fur
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col navv">
+          <ul class="nav nav-underline">
+            <li class="nav-itemi">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Clothings</a
+              >
+            </li>
+            <li class="nav-itemi">
+              <a class="nav-link accesories" href="#">Acessories</a>
+            </li>
+            <li class="nav-itemi">
+              <a class="nav-link shoes" href="#">Shoes</a>
+            </li>
+            <li class="nav-itemi">
+              <a class="nav-link bag" href="#">HandBag</a>
+            </li>
+          </ul>
+          <div style="display: flex">
+            <button class="prev" id="btnn">
+              <i class="fa-solid fa-angles-left"></i>
+            </button>
+            <div class="card-slid">
+              <div class="cardi">
+                <img src="cap3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="cap4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+
+              <div class="cardi">
+                <img src="shirt.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="cap7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe6.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="cap5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="cap4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <button class="next" id="btnn">
+              <i class="fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="deals">
+        <div class="deall" style="width: 60%; text-align: center">
+          <h3
+            style="
+              margin-top: 50px;
+              font-size: 50px;
+              font-family: sans-serif;
+              font-weight: bolder;
+            "
+          >
+            Deals of the week
+          </h3>
+          <hr
+            style="
+              color: orange;
+              width: 20px;
+              opacity: 5;
+              font-weight: 700;
+              font-size: 20px;
+              margin: auto;
+              width: 90px;
+            "
+          />
+          <p style="margin-top: 40px">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+            impedit reiciendis ducimus dolores deleniti similique animi facilis
+            laboriosam tenetur alias.
+          </p>
+          <p>
+            <span style="font-size: 30px; color: orange; font-weight: bolder"
+              >$45.00</span
+            >
+            / HandBag
+          </p>
+          <div>
+            <h2 class="timer">
+              <div>
+                <span><span class="day">25</span> </span><br />
+                DAYS
+              </div>
+              <div>
+                <span><span class="hour">24</span></span
+                ><br />
+                HRS
+              </div>
+              <div>
+                <span class="miin"><span class="miin">60</span> </span><br />
+                MINS
+              </div>
+              <div>
+                <span><span class="seec">60</span></span
+                ><br />
+                SEC
+              </div>
+            </h2>
+          </div>
+        </div>
+        <img src="bagg.png" alt="" width="500px" height="500px" />
+      </div>
+      <div class="row" style="margin-top: 40px">
+        <div class="col navv">
+          <ul class="nav nav-underline">
+            <li class="nav-itemi">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Clothings</a
+              >
+            </li>
+            <li class="nav-itemi">
+              <a class="nav-link accesories" href="#">Acessories</a>
+            </li>
+            <li class="nav-itemi">
+              <a class="nav-link shoes" href="#">Shoes</a>
+            </li>
+            <li class="nav-itemi">
+              <a class="nav-link bag" href="#">HandBag</a>
+            </li>
+          </ul>
+          <div style="display: flex">
+            <button class="prevv" id="btnn">
+              <i class="fa-solid fa-angles-left"></i>
+            </button>
+            <div class="card-slid2">
+              <div class="cardi">
+                <img src="cap3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="cap4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+
+              <div class="cardi">
+                <img src="shirt.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="cap7.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe6.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="cap5.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+              <div class="cardi">
+                <img src="shoe1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  <p class="card-text">
+                    $20.22 &nbsp;&nbsp;<strike style="color: rgb(150, 158, 160)"
+                      >50.43</strike
+                    >
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+              </div>
+            </div>
+            <button class="nextt" id="btnn">
+              <i class="fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <figure class="figure" style="position: relative">
+            <img
+              src="white heels.jpg"
+              class="figure-img img-fluid rounded"
+              alt="..."
+              style="position: relative"
+            />
+            <figcaption
+              class="figure-caption"
+              style="
+                font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                  sans-serif;
+                font-size: large;
+              "
+            >
+              A Classy Lady
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row images">
+          <div
+            class="col-sm-6 col-md-6 col-lg-2 nam"
+            style="position: relative"
+          >
+            <img src="fashion.avif" alt="" />
+            <div class="hover">
+              <i class="fa-brands fa-instagram" style="font-size: 24px"></i>
+              <h3>LouisDm Library</h3>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-2 nam"
+            style="position: relative"
+          >
+            <img src="fashion1.avif" alt="" />
+            <div class="hover">
+              <i class="fa-brands fa-instagram" style="font-size: 24px"></i>
+              <h3>LouisDm Library</h3>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-2 nam"
+            style="position: relative"
+          >
+            <img src="fashion2.avif" alt="" />
+            <div class="hover">
+              <i class="fa-brands fa-instagram" style="font-size: 24px"></i>
+              <h3>LouisDm Library</h3>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-2 nam"
+            style="position: relative"
+          >
+            <img src="fashion8.avif" alt="" />
+            <div class="hover">
+              <i class="fa-brands fa-instagram" style="font-size: 24px"></i>
+              <h3>LouisDm Library</h3>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-2 nam"
+            style="position: relative"
+          >
+            <img src="fashion7.jpg" alt="" />
+            <div class="hover">
+              <i class="fa-brands fa-instagram" style="font-size: 24px"></i>
+              <h3>LouisDm Library</h3>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-2 nam"
+            style="position: relative"
+          >
+            <img src="fashion6.avif" alt="" />
+            <div class="hover">
+              <i class="fa-brands fa-instagram" style="font-size: 24px"></i>
+              <h3>LouisDm Library</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px; margin-bottom: 20px">
+        <h2>From The Blog</h2>
+        <hr
+          style="
+            color: orange;
+            width: 20px;
+            opacity: 5;
+            font-weight: bolder;
+            font-size: 20px;
+            margin: auto;
+            width: 90px;
+          "
+        />
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card blog">
+            <img src="fashionn1.avif" class="card-img-top" alt="... " />
+            <div class="card-body">
+              <p>
+                <i class="fa-regular fa-calendar"></i> May 12, 2016 &nbsp;
+                &nbsp;<i class="fa-solid fa-message"></i> &nbsp;5
+              </p>
+              <h5 class="card-title">
+                The Best Street Style From London Fashion Week
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                exercitationem aperiam quia laborum enim sit optio magni
+                excepturi praesentium. Aperiam!
+              </p>
+              <a href="blogpost.html" class="btn btn-primary">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card blog">
+            <img src="fashionn.avif" class="card-img-top" alt="... " />
+            <div class="card-body">
+              <p>
+                <i class="fa-regular fa-calendar"></i> May 12, 2016 &nbsp;
+                &nbsp;<i class="fa-solid fa-message"></i> &nbsp;5
+              </p>
+              <h5 class="card-title">
+                How To Brighten Your Wardrobe With a Dash Of Lime
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                exercitationem aperiam quia laborum enim sit optio magni
+                excepturi praesentium. Aperiam!
+              </p>
+              <a href="blogpost.html" class="btn btn-primary">read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card blog">
+            <img src="fashionn3.avif" class="card-img-top" alt="... " />
+            <div class="card-body">
+              <p>
+                <i class="fa-regular fa-calendar"></i> May 12, 2016 &nbsp;
+                &nbsp;<i class="fa-solid fa-message"></i> &nbsp;5
+              </p>
+              <h5 class="card-title">
+                Vogue's Ultimate Guide To Autumn/Winter 2019 Shoes
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+                exercitationem aperiam quia laborum enim sit optio magni
+                excepturi praesentium. Aperiam!
+              </p>
+              <a href="blogpost.html" class="btn btn-primary">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="deliv" style="margin-top: 20px">
+        <div
+          class="row"
+          style="
+            margin: auto;
+            border: 2px solid rgb(236, 184, 88);
+            padding-top: 30px;
+            padding: 10px;
+            margin-bottom: 30px;
+          "
+        >
+          <div
+            class="col-sm-12 col-md-12 col-lg-4 mb-2"
+            style="display: flex; align-items: center"
+          >
+            <i
+              class="fa-solid fa-truck"
+              style="font-size: 40px; color: rgb(236, 184, 88)"
+            ></i>
+            &nbsp;&nbsp;&nbsp;
+            <div>
+              <h4>FREE SHIPPING</h4>
+              <p>For all orders above $99</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-4 mb-2"
+            style="display: flex; align-items: center"
+          >
+            <i
+              class="fa-solid fa-clock"
+              style="font-size: 40px; color: rgb(236, 184, 88)"
+            ></i>
+            &nbsp;&nbsp;&nbsp;
+            <div>
+              <h4>DELIVERY ON TIME</h4>
+              <p>For every customer</p>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-12 col-lg-4 mb-2"
+            style="display: flex; align-items: center"
+          >
+            <i
+              class="fa-solid fa-truck"
+              style="font-size: 40px; color: rgb(236, 184, 88)"
+            ></i>
+            &nbsp;&nbsp;&nbsp;
+            <div>
+              <h4>SECURE PAYMENT</h4>
+              <p>For all orders above $99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="spons"
+        style="
+          background-color: rgb(41, 39, 39);
+          height: 70px;
+          color: rgb(121, 118, 114);
+          padding: 10px;
+          margin-bottom: 0px;
+        "
+      >
+        <div class="row">
+          <div class="col-lg-3 d-flex" style="align-items: center">
+            <i class="fa-solid fa-signature" style="font-size: 30px"></i>&nbsp;
+            <h2 style="font-style: italic">rezure</h2>
+          </div>
+          <div class="col-lg-3 d-flex" style="align-items: center">
+            <i class="fa-solid fa-signature" style="font-size: 30px"></i>&nbsp;
+            <h2 style="font-style: italic">Forieno</h2>
+          </div>
+          <div class="col-lg-3 d-flex" style="align-items: center">
+            <i class="fa-solid fa-signature" style="font-size: 30px"></i>&nbsp;
+            <h2 style="font-style: italic">Necapuso</h2>
+          </div>
+          <div class="col-lg-3 d-flex" style="align-items: center">
+            <i class="fa-solid fa-signature" style="font-size: 30px"></i>&nbsp;
+            <h2 style="font-style: italic">Air-Emirate</h2>
+          </div>
+        </div>
+      </div>
+      <div class="foot" style="background-color: rgb(19, 18, 18)">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <a
+              class="navbar-brand"
+              href="#"
+              style="
+                font-weight: 900;
+                color: rgb(247, 246, 246);
+                font-size: xx-large;
+              "
+              >FASHI
+              <span
+                style="
+                  font-weight: 900;
+                  color: rgb(228, 140, 9);
+                  font-size: xx-large;
+                "
+                >.</span
+              ></a
+            >
+            <address>
+              Address: 60-49 Road 11378 New <br />
+              York <br />
+              Phone: +65 11.188.888 Email: hello.colorlib@gmail.com
+            </address>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2">
+            <h5 style="color: white">Information</h5>
+            <a href="#">About Us</a> <br />
+            <a href="#">Checkout</a> <br />
+            <a href="#">Contact</a><br />
+            <a href="#">Serivius</a>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-2">
+            <h5 style="color: white">My Account</h5>
+            <a href="#">My Account</a> <br />
+            <a href="#">Contact</a> <br />
+            <a href="#">Shopping Cart</a><br />
+            <a href="#">Shop</a>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <h5 style="color: white">My Account</h5>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+            <label for="mail" style="display: flex; margin: 0; border: none">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="ENTER YOUR MAIL"
+                style="
+                  background-color: rgb(61, 60, 59);
+                  border: none;
+                  outline: none;
+                  color: rgb(212, 210, 210);
+                  padding: 10px;
+                "
+              />
+              <button
+                style="
+                  border: none;
+                  outline: none;
+                  margin-left: 0;
+                  background-color: rgb(194, 128, 4);
+                  padding: 10px;
+                  color: white;
+                "
+              >
+                SUBSCRIBE
+              </button>
+            </label>
+          </div>
+        </div>
+        <hr style="color: gray; font-size: 20px; font-weight: bolder" />
+        <p>
+          copyright &copy;2024 ALL RIGHT RESERVED | This template is made with
+          💗 by Colorlib
+        </p>
+      </div>
+    </div>
+    <script src="caro.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

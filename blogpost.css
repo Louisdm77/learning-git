@@ -1,0 +1,13 @@
+.imm img {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 780px) {
+  .share {
+    display: block !important;
+  }
+  .next {
+    display: block !important;
+  }
+}
